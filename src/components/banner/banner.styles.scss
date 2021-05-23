@@ -1,0 +1,72 @@
+@import "../../utils/typography.utils.scss";
+@import "../../utils/colors.utils.scss";
+
+.banner {
+	min-width: 60vw;
+	min-height: 80vh;
+	border-radius: 35px;
+	text-align: center;
+
+	&__logo {
+		width: 100%;
+		max-height: 200px;
+		object-fit: contain;
+		display: block;
+		margin: 1rem auto;
+	}
+
+	&__title {
+		display: block;
+		font-size: $font-size-6;
+		line-height: $line-height-heading;
+		letter-spacing: $ls-headline;
+		color: transparent;
+		background-image: linear-gradient(
+			to right bottom,
+			$green,
+			$cyan
+		);
+		background-clip: text;
+		font-weight: 300;
+		margin: 1rem auto;
+	}
+
+	&__button {
+		cursor: pointer;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		margin: 1rem auto;
+		padding: 1rem 2rem;
+		font-weight: bold;
+		font-size: $font-size-4;
+		line-height: $line-height-title;
+		letter-spacing: $ls-headline;
+		outline: none;
+		color: $primary;
+		background: none;
+		background-color: transparent;
+		border-radius: 99999px;
+		border: 2px solid currentColor;
+		transition: transform 0.125s ease-in-out,
+			box-shadow 0.125s ease-in-out;
+	}
+}
+
+@media only screen and (max-width: 48em) {
+	.banner {
+		min-height: 50vh;
+
+		&__logo {
+			max-height: 100px;
+		}
+
+		&__title {
+			font-size: $font-size-5;
+		}
+		&__button {
+			padding: 0.5rem 1rem;
+			font-size: $font-size-3;
+		}
+	}
+}
