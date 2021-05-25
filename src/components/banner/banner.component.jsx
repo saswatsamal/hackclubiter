@@ -11,9 +11,12 @@ function Banner() {
 				className="banner__logo"
 			/>
 			<h1 className="banner__title">Hack Club ITER</h1>
-			<button className="banner__button">
+
+			<a
+				href="http://bit.ly/hackclubiter-20"
+				className="banner__cta">
 				Become a member &rarr;
-			</button>
+			</a>
 		</div>
 	);
 }

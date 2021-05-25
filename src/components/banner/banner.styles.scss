@@ -31,7 +31,7 @@
 		margin: 1rem auto;
 	}
 
-	&__button {
+	&__cta {
 		cursor: pointer;
 		display: inline-flex;
 		align-items: center;
@@ -46,10 +46,26 @@
 		color: $primary;
 		background: none;
 		background-color: transparent;
+		text-decoration: none;
 		border-radius: 99999px;
 		border: 2px solid currentColor;
 		transition: transform 0.125s ease-in-out,
 			box-shadow 0.125s ease-in-out;
+	}
+
+	&__cta:hover {
+		-webkit-transform: scale(1.08);
+		transform: scale(1.08);
+		background: linear-gradient(120deg, $orange, $primary);
+		outline: none;
+		border: none;
+		color: $snow;
+	}
+
+	&__cta:focus {
+		border: none;
+		outline: none;
+		text-decoration: none;
 	}
 }
 
@@ -64,7 +80,7 @@
 		&__title {
 			font-size: $font-size-5;
 		}
-		&__button {
+		&__cta {
 			padding: 0.5rem 1rem;
 			font-size: $font-size-3;
 		}
