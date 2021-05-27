@@ -6,3 +6,6 @@
   
 <h2 align="center">About Website</h2>
 <p align="center">This website site has been developed by Rahul Anad Sahu and is currently being maintained by Saswat Samal.</p>
+
+<h3 align="center">Code of Conduct</h3>
+<p align="center">Follow the code of conduct as per of Hack Club.</p>
